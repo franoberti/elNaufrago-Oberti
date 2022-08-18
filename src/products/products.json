@@ -1,0 +1,50 @@
+[
+    {
+        "title" : "Harry Potter Y la Piedra Filosofal",
+        "image": "https://http2.mlstatic.com/D_NQ_NP_682003-MLA44529909638_012021-O.webp",
+        "initial" : 0,
+        "stock": 15
+    },
+    {
+        "title" : "Harry Potter Y la Camara de los Secretos",
+        "image": "https://http2.mlstatic.com/D_NQ_NP_833377-MLA27925777394_082018-O.webp",
+        "initial" : 0,
+        "stock": 4
+    },
+    {
+        "title" : "Harry Potter Y el Prisionero de Azkaban",
+        "image": "https://http2.mlstatic.com/D_NQ_NP_948407-MLA50161890793_062022-O.webp",
+        "initial" : 0,
+        "stock": 10
+    },
+    {
+        "title" : "Harry Potter Y el Caliz de Fuego",
+        "image": "https://http2.mlstatic.com/D_NQ_NP_668767-MLA42684218433_072020-O.webp",
+        "initial" : 0,
+        "stock": 17
+    },
+    {
+        "title" : "Harry Potter Y la Orden del Fenix",
+        "image": "https://http2.mlstatic.com/D_NQ_NP_818441-MLA27925777395_082018-O.webp",
+        "initial" : 0,
+        "stock": 15
+    },
+    {
+        "title" : "Harry Potter Y el Principe Mestizo",
+        "image": "https://http2.mlstatic.com/D_NQ_NP_671106-MLA27925777400_082018-O.webp",
+        "initial" : 0,
+        "stock": 0
+    },
+    {
+        "title" : "Harry Potter Y las Reliquias de la Muerte",
+        "image": "https://http2.mlstatic.com/D_NQ_NP_715758-MLA27925778846_082018-O.webp",
+        "initial" : 0,
+        "stock": 2
+    },
+    {
+        "title" : "Harry Potter Y el Legado Maldito",
+        "image": "https://http2.mlstatic.com/D_NQ_NP_808102-MLA46849768747_072021-O.webp",
+        "initial" : 0,
+        "stock": 2
+    }
+]
