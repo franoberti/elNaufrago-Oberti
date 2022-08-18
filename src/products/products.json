@@ -1,50 +1,74 @@
 [
     {
+        "id": 1,
         "title" : "Harry Potter Y la Piedra Filosofal",
+        "description": "Harry Potter se ha quedado huérfano y vive en casa de sus abominables tíos y del insoportable primo Dudley. Se siente muy triste y solo, hasta que un buen día recibe una carta que cambiará su vida para siempre. En ella le comunican que ha sido aceptado como alumno en el colegio interno Hogwarts de magia y hechicería. A partir de ese momento, la suerte de Harry da un vuelco espectacular. En esa escuela tan especial aprenderá encantamientos, trucos fabulosos y tácticas de defensa contra las malas artes. Se convertirá en el campeón escolar de quidditch, especie de fútbol aéreo que se juega montado sobre escobas, y hará un puñado de buenos amigos... aunque también algunos temibles enemigos. Pero, sobre todo, conocerá los secretos que le permitirán cumplir con su destino. Pues, aunque no lo parezca a primera vista, Harry no es un chico común y corriente. ¡Es un verdadero mago!",
         "image": "https://http2.mlstatic.com/D_NQ_NP_682003-MLA44529909638_012021-O.webp",
         "initial" : 0,
-        "stock": 15
+        "stock": 15,
+        "price": 3500
     },
     {
+        "id": 2,
         "title" : "Harry Potter Y la Camara de los Secretos",
+        "description": "Tras derrotar una vez más a lord Voldemort, su siniestro enemigo en Harry Potter y la piedra filosofal, Harry espera impaciente en casa de sus insoportables tíos el inicio del segundo curso del Colegio Hogwarts de Magia y Hechicería. Sin embargo, la espera dura poco, pues un elfo aparece en su habitación y le advierte que una amenaza mortal se cierne sobre la escuela. Así pues, Harry no se lo piensa dos veces y, acompañado de Ron, su mejor amigo, se dirige a Hogwarts en un coche volador. Pero ¿puede un aprendiz de mago defender la escuela de los malvados que pretenden destruirla? Sin saber que alguien ha abierto la Cámara de los Secretos, dejando escapar una serie de monstruos peligrosos, Harry y sus amigos Ron y Hermione tendrán que enfrentarse con arañas gigantes, serpientes encantadas, fantasmas enfurecidos y, sobre todo, con la mismísima reencarnación de su más temible adversario.",
         "image": "https://http2.mlstatic.com/D_NQ_NP_833377-MLA27925777394_082018-O.webp",
         "initial" : 0,
-        "stock": 4
+        "stock": 4,
+        "price": 3500
     },
     {
+        "id": 3,
         "title" : "Harry Potter Y el Prisionero de Azkaban",
+        "description": "De la prisión de Azkaban se ha escapado un terrible villano, Sirius Black, un asesino en serie que fue cómplice de lord Voldemort y que, dicen los rumores, quiere vengarse de Harry por haber destruido a su maestro. Por si esto fuera poco, entran en acción los dementores, unos seres abominables capaces de robarles la felicidad a los magos y de eliminar todo recuerdo hermoso de aquellos que se atreven a acercárseles. El desafío es enorme, pero Harry, Ron y Hermione son capaces de enfrentarse a todo esto y mucho más.",
         "image": "https://http2.mlstatic.com/D_NQ_NP_948407-MLA50161890793_062022-O.webp",
         "initial" : 0,
-        "stock": 10
+        "stock": 10,
+        "price": 3500
     },
     {
+        "id": 4,
         "title" : "Harry Potter Y el Caliz de Fuego",
+        "description": "Tras otro abominable verano con los Dursley, Harry se dispone a iniciar el cuarto curso en Hogwarts, la famosa escuela de magia y hechicería. A sus catorce años, a Harry le gustaría ser un joven mago como los demás y dedicarse a aprender nuevos sortilegios, encontrarse con sus amigos Ron y Hermione y asistir con ellos a los Mundiales de quidditch. Sin embargo, al llegar al colegio le espera una gran sorpresa que lo obligará a enfrentarse a los desafíos más temibles de toda su vida. Si logra superarlos, habrá demostrado que ya no es un niño y que está preparado para vivir las nuevas y emocionantes experiencias que el futuro le depara.",
         "image": "https://http2.mlstatic.com/D_NQ_NP_668767-MLA42684218433_072020-O.webp",
         "initial" : 0,
-        "stock": 17
+        "stock": 17,
+        "price": 3500
     },
     {
+        "id": 5,
         "title" : "Harry Potter Y la Orden del Fenix",
+        "description": "Las tediosas vacaciones de verano en casa de sus tíos todavía no han acabado y Harry se encuentra más inquieto que nunca. Apenas ha tenido noticias de Ron y Hermione, y presiente que algo extraño está sucediendo en Hogwarts. En efecto, cuando por fin comienza otro curso en el famoso colegio de magia y hechicería, sus temores se vuelven realidad. El Ministerio de Magia niega que Voldemort haya regresado y ha iniciado una campaña de desprestigio contra Harry y Dumbledore, para lo cual ha asignado a la horrible profesora Dolores Umbridge la tarea de vigilar todos sus movimientos. Así pues, además de sentirse solo e incomprendido, Harry sospecha que Voldemort puede adivinar sus pensamientos, e intuye que el temible mago trata de apoderarse de un objeto secreto que le permitiría recuperar su poder destructivo.",
         "image": "https://http2.mlstatic.com/D_NQ_NP_818441-MLA27925777395_082018-O.webp",
         "initial" : 0,
-        "stock": 15
+        "stock": 15,
+        "price": 3500
     },
     {
-        "title" : "Harry Potter Y el Principe Mestizo",
+        "id": 6,
+        "title" : "Harry Potter Y el Misterio del Príncipe",
+        "description": "Con dieciséis años cumplidos, Harry inicia el sexto curso en Hogwarts en medio de terribles acontecimientos que asolan Inglaterra. Elegido capitán del equipo de Quidditch, los entrenamientos, los exámenes y las chicas ocupan todo su tiempo, pero la tranquilidad dura poco. A pesar de los férreos controles de seguridad que protegen la escuela, dos alumnos son brutalmente atacados. Dumbledore sabe que se acerca el momento, anunciado por la Profecía, en que Harry y Voldemort se enfrentarán a muerte: «El único con poder para vencer al Señor Tenebroso se acerca... Uno de los dos debe morir a manos del otro, pues ninguno de los dos podrá vivir mientras siga el otro con vida.». El anciano director solicitará la ayuda de Harry y juntos emprenderán peligrosos viajes para intentar debilitar al enemigo, para lo cual el joven mago contará con la ayuda de un viejo libro de pociones perteneciente a un misterioso príncipe, alguien que se hace llamar Príncipe Mestizo.",
         "image": "https://http2.mlstatic.com/D_NQ_NP_671106-MLA27925777400_082018-O.webp",
         "initial" : 0,
-        "stock": 0
+        "stock": 0,
+        "price": 3500
     },
     {
+        "id": 7,
         "title" : "Harry Potter Y las Reliquias de la Muerte",
+        "description": "La fecha crucial se acerca. Cuando cumpla diecisiete años, Harry perderá el encantamiento protector que lo mantiene a salvo. El anunciado duelo a muerte con lord Voldemort es inminente, y la casi imposible misión de encontrar y destruir los restantes Horrocruxes, más urgente que nunca. Ha llegado la hora final, el momento de tomar decisiones difíciles. Harry debe abandonar la calidez y seguridad de La Madriguera para seguir sin miedo ni vacilaciones el inexorable sendero trazado para él. Consciente de lo mucho que está en juego, tendrá que buscar en su interior la fuerza necesaria que lo impulse en la vertiginosa carrera para enfrentarse a su destino.",
         "image": "https://http2.mlstatic.com/D_NQ_NP_715758-MLA27925778846_082018-O.webp",
         "initial" : 0,
-        "stock": 2
+        "stock": 2,
+        "price": 3500
     },
     {
+        "id": 8,
         "title" : "Harry Potter Y el Legado Maldito",
+        "description": "DIECINUEVE AÑOS DESPUÉS...LA OCTAVA HISTORIA Ser Harry Potter nunca ha sido tarea fácil, menos aún desde que se ha convertido en un ocupadísimo empleado del Ministerio de Magia, un hombre casado y padre de tres hijos. Mientras Harry planta cara a un pasado que se resiste a quedar atrás, su hijo menor, Albus, ha de luchar contra el peso de una herencia familiar de la que él nunca ha querido saber nada. Cuando el destino conecte el pasado con el presente, padre e hijo deberán afrontar una verdad muy incómoda: a veces, la oscuridad surge de los lugares más insospechados. Harry Potter y el legado maldito es una obra de teatro de Jack Thorne basada en una historia original de J. K. Rowling, John Tiffany y Jack Thorne. Es la octava historia de la saga de Harry Potter y la primera que se representa oficialmente en los escenarios. Esta edición especial del texto teatral acerca a los lectores la continuación del viaje de Harry Potter, sus amigos y familiares, inmediatamente después del estreno mundial de la obra en el West End de Londres el 30 de julio de 2016.",
         "image": "https://http2.mlstatic.com/D_NQ_NP_808102-MLA46849768747_072021-O.webp",
         "initial" : 0,
-        "stock": 2
+        "stock": 8,
+        "price": 3500
     }
 ]

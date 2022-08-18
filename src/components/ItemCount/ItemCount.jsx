@@ -8,8 +8,6 @@ const ItemCount = (props) => {
     const {initial, stock} = props
 
     const [numero, setNumero] = React.useState(initial)
-    const [stoc, setStoc] = React.useState(stock)
-
 
     const restador = (n) => {
         if (n == 0){
@@ -32,9 +30,12 @@ const ItemCount = (props) => {
 
   return (
     <>
-        <a className="sumador" onClick={()=> restador(numero)}> <img src={menos} alt="imagen no encontrada" width="20"/> </a>
-        <span className="card-text">{numero}</span>
-        <a className="sumador" onClick={()=> sumador(numero, stoc)}> <img src={mas} alt="imagen no encontrada" width="20"/> </a>
+        <div className="card d-flex flex-row align-items-center justify-content-between" style={{width: '14rem', height:'2rem', marginBottom:'10px'}}>
+            <a className="sumador" onClick={()=> restador(numero)}> <img src={menos} alt="imagen no encontrada" width="20"/> </a>
+            <span className="card-text">{numero}</span>
+            <a className="sumador" onClick={()=> sumador(numero, stock)}> <img src={mas} alt="imagen no encontrada" width="20"/> </a>
+        </div>
+        <button className="btn btn-success" style={{width: '14rem'}}>Agregar a Carrito</button>
     </>
   )
 }
