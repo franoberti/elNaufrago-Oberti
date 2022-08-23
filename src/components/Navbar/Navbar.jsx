@@ -20,8 +20,8 @@ const Navbar = () => {
                 </button>
                 <div className="collapse justify-content-center navbar-collapse" id="navbarNavAltMarkup">
                     <div className="navbar-nav">
-                        {navBarItems.map((item)=>(
-                            <a className="nav-link float-left d-flex align-items-center" href="#" style={{fontSize:'20px !important'}}>{item}</a>
+                        {navBarItems.map((item, index)=>(
+                            <a key={index} className="nav-link float-left d-flex align-items-center" href="#" style={{fontSize:'20px !important'}}>{item}</a>
                         ))}
                     </div>
                 </div>
