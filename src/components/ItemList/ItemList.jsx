@@ -5,22 +5,9 @@ import Spinner from '../../components/Spinner/Spinner'
 import { useState } from 'react'
 import { useEffect } from 'react'
 
-const ItemList = () => {
+const ItemList = (props) => {
 
-    const [items, setItems] = useState([])
-
-    useEffect(() => {
-        const task = new Promise ((resolve, rejected) =>{
-            setTimeout(()=>{
-                resolve(productos)
-            }, 2000);
-        })
-
-        task.then(resultado => setItems(resultado))
-        return () => {
-        };
-
-    }, []);
+    const {items} = props
 
     return (
         <>
