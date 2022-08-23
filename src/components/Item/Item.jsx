@@ -9,6 +9,7 @@ const Item = (props) => {
 
 
     return (
+        
         <div className="col d-flex justify-content-center">
             <div className="card" style={{width: '16rem', marginTop: '2rem'}}>
                 <div className="card-body">
