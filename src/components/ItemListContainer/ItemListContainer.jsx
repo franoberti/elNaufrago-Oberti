@@ -5,7 +5,7 @@ import productos from '../../products/products.json'
 const ItemListContainer = ({greeting}) => {
 
   const onAdd = (numero) => {
-    console.log('El numero actual es' + numero)
+    console.log('Se agregaron ' + numero + ' libros al carrito')
   }
 
   return (
@@ -21,7 +21,7 @@ const ItemListContainer = ({greeting}) => {
               <div className="card-body">
                   <img src={item.image} className="card-img-top"></img>
                   <h5 className="card-title pt-3">{item.title}</h5>
-                  <ItemCount initial={item.initial} stock={item.stock} onAdd={onAdd()}/>
+                  <ItemCount initial={item.initial} stock={item.stock} onAdd={onAdd}/>
               </div>
             </div>
           </div>
