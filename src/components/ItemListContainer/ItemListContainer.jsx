@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import ItemCount from '../../components/ItemCount/ItemCount'
 import productos from '../../products/products.json'
 
