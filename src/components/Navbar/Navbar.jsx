@@ -1,17 +1,28 @@
 import React from 'react'
 import logo from '../../assets/logoNaufrago150.svg'
 import CartWidget from '../Cart/CartWidget'
+import Rutas from './config.json'
+import {NavLink} from 'react-router-dom'
+import ItemsNav from './config.json'
 
 const Navbar = () => {
 
-    const navBarItems = ["Home", "About Us", "Categorias", "Login", <CartWidget/>]
+    const navBarItems = ["Home", "Catalogo", <CartWidget/>]
 
     return (
         <nav className="navbar navbar-expand-lg bg-light">
             <div className="container align-items-center justify-content-center">
-                <div className="tituloNav navbar-brand d-flex justify-content-center align-items-center" href="#">
-                    <img src={logo} alt="" width="80" height="50" className="d-inline-block align-text-top" />
-                    El Náufrago
+                <NavLink to={'/'} style={{textDecoration: 'none'}}>
+                    <div className="tituloNav navbar-brand d-flex justify-content-center align-items-center" href="#" style={{cursor: 'pointer'}}>
+                        <img src={logo} alt="" width="80" height="50" className="d-inline-block align-text-top" />
+                        El Náufrago
+                    </div>
+                </NavLink>
+            </div>
+            <div class="input-group container align-items-center justify-content-center">
+                <input type="text" class="form-control" placeholder="Search" aria-label="Recipient's username" aria-describedby="basic-addon2"/>
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="button">Buscar</button>
                 </div>
             </div>
             <div className="container-fluid">
@@ -20,9 +31,10 @@ const Navbar = () => {
                 </button>
                 <div className="collapse justify-content-center navbar-collapse" id="navbarNavAltMarkup">
                     <div className="navbar-nav">
-                        {navBarItems.map((item, index)=>(
-                            <a key={index} className="nav-link float-left d-flex align-items-center" href="#" style={{fontSize:'20px !important'}}>{item}</a>
+                        {ItemsNav.routes.map((item, index)=>(
+                            <NavLink key={index} className="nav-link float-left d-flex align-items-center" to={item.to} style={{fontSize:'20px !important'}}>{item.label}</NavLink>
                         ))}
+                        <NavLink to={'/carrito'}><CartWidget/></NavLink>
                     </div>
                 </div>
             </div>

@@ -6,22 +6,13 @@ import {BrowserRouter, Route, Routes} from 'react-router-dom'
 import { useEffect } from 'react';
 import axios from 'axios';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
+import Rutas from './routes/Rutas'
 
 function App() {
   
   return (
     <div className="App">
-
-
-      <BrowserRouter>
-      <Navbar/>
-      <Routes>
-        <Route path="/" element={<ItemListContainer greeting={"Bienvenido a la Librería El Náufrago"}/>} />
-        <Route path="/item/:id" element={<ItemDetailContainer/>} />
-      </Routes>
-      <Footer/>
-      </BrowserRouter>
-      
+      <Rutas></Rutas>
     </div>    
   );
 }

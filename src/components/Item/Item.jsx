@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
 import ItemCount from '../../components/ItemCount/ItemCount'
+import {Link} from 'react-router-dom'
 
 
 const Item = (props) => {
 
 
-    const {title, image, stock, initial} = props
+    const {id, title, image, stock, initial} = props
 
 
     return (
@@ -15,7 +16,8 @@ const Item = (props) => {
                 <div className="card-body">
                     <h5 className="card-title">{title}</h5> 
                     <img src={image} class="card-img-top mb-3" style={{width: '10rem'}}></img>
-                    <button type="button" class="btn btn-outline-secondary col-12">Ver detalle del producto</button>
+                    <Link to={`/item/${id}`}><button type="button" class="btn btn-outline-secondary col-12">Ver detalle del producto</button></Link>
+                    
                     <hr />
                     <p style={{margin: 0}} >Stock: {stock}</p>
                 </div>

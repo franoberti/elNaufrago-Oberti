@@ -1,0 +1,16 @@
+{
+    "routes":[
+        {
+            "label": "Home",
+            "to": "/"
+        },
+        {
+            "label": "Catalogo",
+            "to": "/catalogo"
+        },
+        {
+            "label": "About Us",
+            "to": "/about-us"
+        }
+    ]
+}
