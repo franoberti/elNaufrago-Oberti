@@ -1,9 +1,7 @@
 import React from 'react'
-import productos from '../../products/products.json'
 import Item from '../../components/Item/Item'
 import Spinner from '../../components/Spinner/Spinner'
-import { useState } from 'react'
-import { useEffect } from 'react'
+
 
 const ItemList = (props) => {
 

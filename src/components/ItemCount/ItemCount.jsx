@@ -9,7 +9,6 @@ const ItemCount = (props) => {
 
     const [numero, setNumero] = React.useState(initial)
 
-
     const restador = (n) => {
         if (n == 0){
             setNumero(n)
@@ -36,7 +35,7 @@ const ItemCount = (props) => {
             <span className="card-text">{numero}</span>
             <a className="sumador" onClick={()=> sumador(numero, stock)}> <img src={mas} alt="imagen no encontrada" width="20"/> </a>
         </div>
-        <button className="btn btn-success col-12" onClick={()=> onAdd(numero)}>Agregar a Carrito</button>
+        <button className="btn btn-success col-12" onClick={() => onAdd(numero)}>Agregar a Carrito</button>
     </>
   )
 }

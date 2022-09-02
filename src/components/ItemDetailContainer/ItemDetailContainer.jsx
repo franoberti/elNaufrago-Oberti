@@ -7,8 +7,6 @@ import { useEffect } from 'react'
 
 const ItemDetailContainer = () => {
 
-
-
     const {id} = useParams()
 
     const [item, setItems] = useState({})

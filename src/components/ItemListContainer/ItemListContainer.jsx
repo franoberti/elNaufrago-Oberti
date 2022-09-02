@@ -1,4 +1,3 @@
-import ItemCount from '../../components/ItemCount/ItemCount'
 import React from 'react'
 import ItemList from '../../components/ItemList/ItemList'
 import productos from '../../products/products.json'
@@ -14,7 +13,7 @@ const ItemListContainer = ({greeting}) => {
         const task = new Promise ((resolve, rejected) =>{
             setTimeout(()=>{
                 resolve(productos)
-            }, 2000);
+            }, 500);
         })
 
         task.then(resultado => setItems(resultado))

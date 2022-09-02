@@ -1,13 +1,10 @@
 import React from 'react'
 import logo from '../../assets/logoNaufrago150.svg'
 import CartWidget from '../Cart/CartWidget'
-import Rutas from './config.json'
 import {NavLink} from 'react-router-dom'
 import ItemsNav from './config.json'
 
 const Navbar = () => {
-
-    const navBarItems = ["Home", "Catalogo", <CartWidget/>]
 
     return (
         <nav className="navbar navbar-expand-lg bg-light">
