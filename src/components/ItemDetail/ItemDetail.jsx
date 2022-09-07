@@ -1,15 +1,19 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import ItemCount from '../ItemCount/ItemCount'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronLeft } from '@fortawesome/free-solid-svg-icons'
 import {Link} from 'react-router-dom'
+import { CartContext } from '../../context/GlobalProvider'
 
 const ItemDetail = ({item}) => {
 
-    const {price, description, title, image, stock} = item
+    const {addCarrito} = useContext(CartContext)
+
+    const {id, price, description, title, image, stock} = item
 
     const onAdd = (numero) => {
-        console.log('Se agregaron ' + numero + ' libros al carrito')
+        console.log('Se agregaron ' + numero + ' libros al carrito de ' + title)
+        addCarrito({id, title, price, cantidad: numero})
     }
 
   return (

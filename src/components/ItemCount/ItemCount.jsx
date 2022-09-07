@@ -7,6 +7,8 @@ const ItemCount = (props) => {
 
     const {initial, stock, onAdd} = props
 
+    
+
     const [numero, setNumero] = React.useState(initial)
 
     const restador = (n) => {

@@ -1,0 +1,10 @@
+.carrito{
+    color: rgba(0, 0, 0, 0.55) !important;
+    height: 1.5rem;
+    width: 1.5rem;
+    
+}
+
+.carrito:hover{
+    color: rgba(0, 0, 0, 0.7) !important;
+}

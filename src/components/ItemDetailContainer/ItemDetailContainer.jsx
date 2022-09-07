@@ -17,12 +17,12 @@ const ItemDetailContainer = () => {
         .then((data) => data.json())
         .catch((error) => console.error(error))
 
-        new Promise((resolve) => {
+        const task = new Promise((resolve) => {
             setTimeout(()=>{
                 resolve(productos.find((elemento) => elemento.id == id))
-            }, 2000);
+            }, 500);
         })
-        .then((data) => {
+        task.then((data) => {
             setItems(data)
         })
 

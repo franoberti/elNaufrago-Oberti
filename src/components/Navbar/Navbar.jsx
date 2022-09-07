@@ -16,10 +16,10 @@ const Navbar = () => {
                     </div>
                 </NavLink>
             </div>
-            <div class="input-group container align-items-center justify-content-center">
-                <input type="text" class="form-control" placeholder="Search" aria-label="Recipient's username" aria-describedby="basic-addon2"/>
-                <div class="input-group-append">
-                    <button class="btn btn-outline-secondary" type="button">Buscar</button>
+            <div className="input-group container align-items-center justify-content-center">
+                <input type="text" className="form-control" placeholder="Search" aria-label="Recipient's username" aria-describedby="basic-addon2"/>
+                <div className="input-group-append">
+                    <button className="btn btn-outline-secondary" type="button">Buscar</button>
                 </div>
             </div>
             <div className="container-fluid">
@@ -31,7 +31,7 @@ const Navbar = () => {
                         {ItemsNav.routes.map((item, index)=>(
                             <NavLink key={index} className="nav-link float-left d-flex align-items-center" to={item.to} style={{fontSize:'20px !important'}}>{item.label}</NavLink>
                         ))}
-                        <NavLink to={'/carrito'}><CartWidget/></NavLink>
+                        <NavLink to={'/carrito'} className="nav-link float-left d-flex align-items-center"><CartWidget/></NavLink>
                     </div>
                 </div>
             </div>

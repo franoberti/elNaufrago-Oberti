@@ -2,18 +2,56 @@ import React from 'react'
 import { useState } from 'react'
 import { createContext } from 'react'
 
-export const GlobalContext = createContext()
+export const CartContext = createContext()
 
 function GlobalProvider({children}) {
 
-    let superHeroe = 'superman'
-    const [numeros, setNumeros] = useState([1,2,3,4,5])
-    const tirarAlerta = () => alert('Hola desde Context')
+    const [carrito, setCarrito] = useState([])
+
+    const addCarrito = (producto) => {
+
+        let existe = false
+        carrito.forEach(element => {
+            if (element.id === producto.id){
+                existe = true
+                element.cantidad += producto.cantidad
+            }
+        });
+
+        if (existe == false) {
+            setCarrito([...carrito, producto])
+        }
+
+        console.log(carrito)
+    }
+
+    const removeItem = (producto) => {
+
+        let idAEliminar
+        let i = 0
+        carrito.forEach(chocolate => {
+            chocolate.id === producto.id && (idAEliminar = i)
+            i++
+        })
+
+        carrito.splice(idAEliminar, 1)
+    }
+
+    const resetCart = () => {
+        setCarrito([])
+    }
 
     return (
-        <GlobalContext.Provider value={{superHeroe, numeros, tirarAlerta}}>
+        <CartContext.Provider value={
+            {
+                carrito,
+                addCarrito,
+                removeItem,
+                resetCart
+            }
+            }>
             {children}
-        </GlobalContext.Provider>
+        </CartContext.Provider>
     )
 }
 

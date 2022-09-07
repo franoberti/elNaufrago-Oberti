@@ -27,8 +27,8 @@ const ItemListContainer = ({greeting}) => {
       <h1 className='titulo p-5'>
           {greeting}
       </h1>
-      <div class="container">
-        <div class="row">
+      <div className="container">
+        <div className="row">
           <ItemList items={items}/>
         </div>
       </div>
