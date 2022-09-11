@@ -22,19 +22,12 @@ function GlobalProvider({children}) {
             setCarrito([...carrito, producto])
         }
 
-        console.log(carrito)
     }
 
     const removeItem = (producto) => {
-
-        let idAEliminar
-        let i = 0
-        carrito.forEach(chocolate => {
-            chocolate.id === producto.id && (idAEliminar = i)
-            i++
-        })
-
-        carrito.splice(idAEliminar, 1)
+        
+        setCarrito(carrito.filter(el => el.id !== producto.id))
+        
     }
 
     const resetCart = () => {

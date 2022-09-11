@@ -13,7 +13,7 @@ const ItemDetail = ({item}) => {
 
     const onAdd = (numero) => {
         console.log('Se agregaron ' + numero + ' libros al carrito de ' + title)
-        addCarrito({id, title, price, cantidad: numero})
+        addCarrito({id, image, title, price, cantidad: numero})
     }
 
   return (

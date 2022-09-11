@@ -3,6 +3,7 @@ import logo from '../../assets/logoNaufrago150.svg'
 import CartWidget from '../Cart/CartWidget'
 import {NavLink} from 'react-router-dom'
 import ItemsNav from './config.json'
+import {Link} from 'react-router-dom'
 
 const Navbar = () => {
 
@@ -31,7 +32,8 @@ const Navbar = () => {
                         {ItemsNav.routes.map((item, index)=>(
                             <NavLink key={index} className="nav-link float-left d-flex align-items-center" to={item.to} style={{fontSize:'20px !important'}}>{item.label}</NavLink>
                         ))}
-                        <NavLink to={'/carrito'} className="nav-link float-left d-flex align-items-center"><CartWidget/></NavLink>
+                        <Link to={'/carrito'} className="nav-link float-left d-flex align-items-center"><CartWidget/></Link>
+                        
                     </div>
                 </div>
             </div>
