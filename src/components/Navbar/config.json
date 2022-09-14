@@ -7,10 +7,6 @@
         {
             "label": "Catalogo",
             "to": "/catalogo"
-        },
-        {
-            "label": "About Us",
-            "to": "/about-us"
         }
     ]
 }

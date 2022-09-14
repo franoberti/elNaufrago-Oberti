@@ -22,7 +22,7 @@ const Cart = () => {
   let total
   return (
     <div>
-      <h1 className='titulo p-5'>Carrito</h1>
+      <h1 className='titulo p-5'>Carrito de Compras</h1>
       {carrito.length > 0  ? 
       <>
         <div>
@@ -31,9 +31,9 @@ const Cart = () => {
             <div className='col-2'><button className='btn btn-danger' onClick={resetCart}>Vaciar Carrito</button></div>
           </div>
           <div className='d-flex justify-content-center'>
-            <div className='col-6 cartCont'>
+            <div className='col-6 cartCont containerItems'>
               {carrito.map((item)=>
-                <div className='cartCont d-flex'>
+                <div className='cartCont d-flex item card-bodyItem'>
                   <div className='col-4' style={{padding: '10px'}}>
                     <img src={item.image} style={{height: '200px'}} alt="" />
                   </div>
@@ -46,19 +46,20 @@ const Cart = () => {
                 </div>
               )}
             </div>
-            <div className='col-4 cartCont' style={{padding: '10px'}}>
-                <h3>Datos de Compra</h3>
+
+            <div className='col-4 cartCont containerItems' style={{padding: '10px'}}>
+              <div className='sticky-top'>
+                <h3 >Datos de Compra</h3>
                 <input type="text" name="nombre" placeholder="Nombre..." required className='form-control' style={{marginTop: '10px'}}/>
                 <input type="text" name="apellido" placeholder="Apellido..." required className='form-control' style={{marginTop: '10px'}}/>
                 <input type="email" name="email" placeholder="Email..." required className='form-control' style={{marginTop: '10px'}}/>
                 <input type="number" name="telefono" placeholder="Telefono..." required className='form-control' style={{marginTop: '10px'}}/>
                 <div className='cartCont' style={{padding: '10px', marginTop: '10px'}}>
-
                   <h5>PRECIO TOTAL: $ {getPrecioTotal()}</h5>
                   <button className='btn btn-primary'>Finalizar Compra</button>
-
                 </div>
                 <Link to={`/catalogo`}><button className='btn btn-secondary' style={{marginTop: '10px'}}>Volver al Catálogo</button></Link>
+              </div>
             </div>
           </div>
           
@@ -68,10 +69,14 @@ const Cart = () => {
         
       </>
       :
-      <>
-      <h2>Carrito Vacio</h2>
-      <Link to={`/catalogo`}><button type="button" className="btn btn-outline-secondary">Ver catálogo de productos</button></Link>
-      </>
+      <div className='d-flex align-items-center justify-content-center'>
+        <div className='col-6 containerItems'>
+          <h2>Tu carrito está vacío</h2>
+          <p className='parrafo'>¿No sabés qué comprar? ¡Ve a chequear nuestro catálogo!</p>
+          <Link to={`/catalogo`}><button type="button" className="btn btn-outline-secondary">Ver catálogo de productos</button></Link>
+        </div>
+      </div>
+      
       }
     </div>
   )

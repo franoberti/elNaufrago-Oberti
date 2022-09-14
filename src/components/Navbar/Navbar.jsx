@@ -4,11 +4,14 @@ import CartWidget from '../Cart/CartWidget'
 import {NavLink} from 'react-router-dom'
 import ItemsNav from './config.json'
 import {Link} from 'react-router-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
+import './style.css'
 
 const Navbar = () => {
 
     return (
-        <nav className="navbar navbar-expand-lg bg-light">
+        <nav className="navbar navbar-expand-lg navegador">
             <div className="container align-items-center justify-content-center">
                 <NavLink to={'/'} style={{textDecoration: 'none'}}>
                     <div className="tituloNav navbar-brand d-flex justify-content-center align-items-center" href="#" style={{cursor: 'pointer'}}>
@@ -18,10 +21,8 @@ const Navbar = () => {
                 </NavLink>
             </div>
             <div className="input-group container align-items-center justify-content-center">
-                <input type="text" className="form-control" placeholder="Search" aria-label="Recipient's username" aria-describedby="basic-addon2"/>
-                <div className="input-group-append">
-                    <button className="btn btn-outline-secondary" type="button">Buscar</button>
-                </div>
+                <input type="text" className="buscador" placeholder="Search" aria-label="Recipient's username" aria-describedby="basic-addon2"/>
+                <button className="nav-search-btn" type="button"><FontAwesomeIcon icon={faMagnifyingGlass} /></button>
             </div>
             <div className="container-fluid">
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">

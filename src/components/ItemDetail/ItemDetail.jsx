@@ -2,14 +2,21 @@ import React, { useContext } from 'react'
 import ItemCount from '../ItemCount/ItemCount'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronLeft } from '@fortawesome/free-solid-svg-icons'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { CartContext } from '../../context/GlobalProvider'
 
-const ItemDetail = ({item}) => {
+const ItemDetail = (props) => {
 
     const {addCarrito} = useContext(CartContext)
+    
+    const {item} = props
 
-    const {id, price, description, title, image, stock} = item
+    const {id, title, description, price, stock, image} = item
+
+
+    console.log("Item que llega a item Detail")
+
+    console.log(item)
 
     const onAdd = (numero) => {
         console.log('Se agregaron ' + numero + ' libros al carrito de ' + title)
@@ -19,7 +26,7 @@ const ItemDetail = ({item}) => {
   return (
 
     <div className=' d-flex align-items-center justify-content-center'>
-        <div className='container' style={{margin: '50px', border: '1px solid rgba(0, 0, 0, 0.175)', padding: '15px', borderRadius: '0.375rem'}}>
+        <div className='container containerItems' style={{margin: '50px', border: '1px solid rgba(0, 0, 0, 0.175)', padding: '15px', borderRadius: '0.375rem'}}>
             <div className='row' >
                 <Link className='col-1' to={`/catalogo`} style={{color: 'black'}}><FontAwesomeIcon icon={faChevronLeft} style={{height: '2rem', cursor: 'pointer'}}/></Link>
                 <div className='col-11'></div>
