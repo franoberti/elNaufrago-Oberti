@@ -9,7 +9,13 @@ const ItemList = (props) => {
 
     return (
         <>
-            {items.length < 1 ? <Spinner/> : items.map((item, index)=>(<Item key={index} id={item.id} title={item.title} image={item.image} stock={item.stock} initial={item.initial}/>))}
+            {items.length < 1 ? 
+                <Spinner/> 
+                : 
+                items.map((item, index)=> (
+                        <Item key={index} id={item.id} title={item.title} image={item.image} stock={item.stock} initial={item.initial}/>
+                ))
+            }
         </>
     )
 }
