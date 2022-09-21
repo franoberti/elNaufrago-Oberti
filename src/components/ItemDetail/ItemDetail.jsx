@@ -13,13 +13,7 @@ const ItemDetail = (props) => {
 
     const {id, title, description, price, stock, image} = item
 
-
-    console.log("Item que llega a item Detail")
-
-    console.log(item)
-
     const onAdd = (numero) => {
-        console.log('Se agregaron ' + numero + ' libros al carrito de ' + title)
         addCarrito({id, image, title, price, cantidad: numero})
     }
 

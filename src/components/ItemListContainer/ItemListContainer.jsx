@@ -12,19 +12,6 @@ const ItemListContainer = ({greeting}) => {
 
   const [items, setItems] = useState([])
 
-   /*  useEffect(() => {
-        const task = new Promise ((resolve, rejected) =>{
-            setTimeout(()=>{
-                resolve(productos)
-            }, 500);
-        })
-
-        task.then(resultado => setItems(resultado))
-        return () => {
-        };
-
-    }, []); */
-
     useEffect(() => {
       const getColData = async() => {
         try {
@@ -32,7 +19,6 @@ const ItemListContainer = ({greeting}) => {
           const col = await getDocs(data)
           const res = col.docs.map((doc) =>  doc = {id: doc.id,...doc.data()})
           setItems(res)
-          console.log(res)
         } 
         catch (error) {
           console.log(error)

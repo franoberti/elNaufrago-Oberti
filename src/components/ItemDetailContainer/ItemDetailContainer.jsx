@@ -38,7 +38,6 @@ const ItemDetailContainer = () => {
           const col = await getDocs(data)
           const res = col.docs.map((doc) =>  doc = {id: doc.id,...doc.data()})
           const resItem = res.filter(el => el.id == idBuscado)
-          console.log(resItem)
           setItems(resItem[0])
         } 
         catch (error) {

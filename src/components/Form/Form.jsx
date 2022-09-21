@@ -48,7 +48,6 @@ const Form = (props) => {
             }
         })
 
-        console.log(formulario)
     }
 
     const registrarCompra = async (compra) =>{
@@ -56,7 +55,6 @@ const Form = (props) => {
         try {
             const col = collection(db, "compras")
             const generarCompra = await addDoc(col, compra)
-            console.log(generarCompra.id)
             alert("La compra se finalizo con éxito")
 
         } catch (error) {
