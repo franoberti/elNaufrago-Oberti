@@ -37,10 +37,11 @@ const ItemDetail = (props) => {
                 </div>
                 <div className='col-6'>
                     <h1>{title}</h1>
-                    <h5>Sinopsis: </h5>
-                    <h5>{description}</h5>
-                    <p>Price: {price}</p>
-                    <p>Stock: {stock}</p>
+                    <h4>Sinopsis: </h4>
+                    <p className='text-left'>{description}</p>
+                    <div className='d-flex align-items-center' style={{marginBottom: '15px'}}><h4 style={{marginBottom: '0'}}>Price:</h4> <p style={{marginBottom: '0', marginLeft: '10px'}}>$ {price}</p></div>
+                    <div className='d-flex align-items-center' style={{marginBottom: '15px'}}><h4 style={{marginBottom: '0'}}>Stock:</h4> <p style={{marginBottom: '0', marginLeft: '10px'}}> {stock}</p></div>
+
                     <ItemCount initial={0} stock={stock} onAdd={onAdd} />
                 </div>
 
