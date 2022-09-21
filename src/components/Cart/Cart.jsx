@@ -16,17 +16,18 @@ const Cart = () => {
       <>
         <div>
           <div className='d-flex' style={{margin: '20px'}}>
-            <div className='col-10'></div>
-            <div className='col-2'><button className='btn btn-danger' onClick={resetCart}>Vaciar Carrito</button></div>
+            <div className='col-md-10 col-8'></div>
+            <div className='col-md-2 col-3'><button className='btn btn-danger' onClick={resetCart}>Vaciar Carrito</button></div>
           </div>
-          <div className='d-flex justify-content-center'>
-            <div className='col-6 cartCont containerItems'>
+          <div className='row justify-content-center'>
+
+            <div className='col-md-6 col-11 cartCont containerItems'>
               {carrito.map((item)=>
-                <div className='cartCont d-flex item card-bodyItem'>
-                  <div className='col-4' style={{padding: '10px'}}>
+                <div className='cartCont d-flex item card-bodyItem row'>
+                  <div className='col-md-4 col-11' style={{padding: '10px'}}>
                     <img src={item.image} style={{height: '200px'}} alt="" />
                   </div>
-                  <div className='col-8' style={{padding: '10px'}}>
+                  <div className='col-md-8 col-11' style={{padding: '10px'}}>
                     <h4 >{item.title}</h4>
                     <h5 className='d-flex justify-content-start'> Cantidad: {item.cantidad}</h5>
                     <h5 className='d-flex justify-content-end'> Precio: ${item.price * item.cantidad}</h5>
@@ -36,17 +37,18 @@ const Cart = () => {
               )}
             </div>
 
-            <div className='col-4 cartCont containerItems' style={{padding: '10px'}}>
+            <div className='col-md-4 col-11 cartCont containerItems' style={{padding: '10px'}}>
               <div className='sticky-top'>
                 <Form compra={{carrito}} ></Form>
               </div>
             </div>
+
           </div>
         </div>
       </>
       :
       <div className='d-flex align-items-center justify-content-center'>
-        <div className='col-6 containerItems'>
+        <div className='col-md-6 col-11 containerItems'>
           <h2>Tu carrito está vacío</h2>
           <p className='parrafo'>¿No sabés qué comprar? ¡Ve a chequear nuestro catálogo!</p>
           <Link to={`/catalogo`}><button type="button" className="btn btn-outline-secondary">Ver catálogo de productos</button></Link>

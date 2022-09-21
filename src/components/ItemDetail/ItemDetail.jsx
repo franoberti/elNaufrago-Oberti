@@ -26,12 +26,12 @@ const ItemDetail = (props) => {
                 <div className='col-11'></div>
             </div>
             <div className='row'>
-                <div className='col-6'>
+                <div className='col-md-6 col-12'>
                     <img src={image} alt="" />
                 </div>
-                <div className='col-6'>
-                    <h1>{title}</h1>
-                    <h4>Sinopsis: </h4>
+                <div className='col-md-6 col-12'>
+                    <h1 style={{marginBottom: '10px', marginTop: '15px'}}>{title}</h1>
+                    <h4  style={{marginBottom: '0'}}>Sinopsis: </h4>
                     <p className='text-left'>{description}</p>
                     <div className='d-flex align-items-center' style={{marginBottom: '15px'}}><h4 style={{marginBottom: '0'}}>Price:</h4> <p style={{marginBottom: '0', marginLeft: '10px'}}>$ {price}</p></div>
                     <div className='d-flex align-items-center' style={{marginBottom: '15px'}}><h4 style={{marginBottom: '0'}}>Stock:</h4> <p style={{marginBottom: '0', marginLeft: '10px'}}> {stock}</p></div>
