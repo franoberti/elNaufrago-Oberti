@@ -50,16 +50,22 @@ const Form = (props) => {
 
     }
 
-    const registrarCompra = async (compra) =>{
+    const registrarCompra = async (formulario) =>{
 
-        try {
-            const col = collection(db, "compras")
-            const generarCompra = await addDoc(col, compra)
-            alert("La compra se finalizo con éxito")
 
-        } catch (error) {
-            alert(error)
+        if (formulario.buyer.nombre == '' || formulario.buyer.apellido == '' || formulario.buyer.email == '' || formulario.buyer.telefono == ''){
+            alert("Debe completar todo el formulario para realizar una compra ")
         }
+        else{
+            try {
+                const col = collection(db, "compras")
+                const generarCompra = await addDoc(col, formulario)
+                alert("La compra se finalizo con éxito")
+            } catch (error) {
+                alert(error)
+            }
+        }
+
     }
 
   return (

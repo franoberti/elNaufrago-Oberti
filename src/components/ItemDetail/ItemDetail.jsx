@@ -36,7 +36,7 @@ const ItemDetail = (props) => {
                     <div className='d-flex align-items-center' style={{marginBottom: '15px'}}><h4 style={{marginBottom: '0'}}>Price:</h4> <p style={{marginBottom: '0', marginLeft: '10px'}}>$ {price}</p></div>
                     <div className='d-flex align-items-center' style={{marginBottom: '15px'}}><h4 style={{marginBottom: '0'}}>Stock:</h4> <p style={{marginBottom: '0', marginLeft: '10px'}}> {stock}</p></div>
 
-                    <ItemCount initial={0} stock={stock} onAdd={onAdd} />
+                    <ItemCount initial={1} stock={stock} onAdd={onAdd} />
                 </div>
 
             </div>

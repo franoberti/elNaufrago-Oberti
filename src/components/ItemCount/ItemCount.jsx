@@ -17,7 +17,7 @@ const ItemCount = (props) => {
     const handleCompro = () => setCompro(true)
 
     const restador = (n) => {
-        if (n == 0){
+        if (n == 1){
             setNumero(n)
         }
         else{
