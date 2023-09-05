@@ -6,7 +6,7 @@
 * Muestra los libros haciendo consulta en una base de datos de Firebase.
 * Al realizar una compra, la misma se registra en la base de datos junto con los datos del comprador.
 
-### A continuación presntamos un GIF que muestra las principales funcinalidades:
+### A continuación presntamos un GIF que muestra las principales funcionalidades:
 
 
 ![GIF](./src/assets/GIF.gif)
